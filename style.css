@@ -16,20 +16,23 @@ body{
 }
 
 .site-header .container{
-  height: 120px;
+  height: 80px;
 }
 
 .site-header{
   background-color: black;
-  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 
 
-.container .header-top{
+.header-top{
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
   color: white;
   align-items: center;
   height: 40px;
@@ -48,9 +51,8 @@ body{
   text-align: center;
 }
 
-.icon img{
-  height: 14px;
-  width: 14px;
+.icon .fa-envelope-open{
+  color: #c7161d;
 }
 
 .english img{
@@ -58,12 +60,8 @@ body{
   width: 36px;
 }
 
-.lock{
-  width: 14px !important;
-  height: 14px !important;
-  margin-bottom: 2px !important;
-}
-.container .icon {
+.icon {
+  margin-left: 355px;
   display:flex;
   margin-right: auto;
   align-items: center;
@@ -75,6 +73,7 @@ body{
   list-style-type: none;
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
 }
 
 .header-top .nav-link{
@@ -84,29 +83,34 @@ body{
 
 .header-top ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .header-top li:last-child {
   margin-right: 0;
 }
-
-.icon p {
-  color: #808080;
-  margin-left: 10px;
-  padding-right: 30px;
+.icon p{
   border-right: 1px solid #808080;
+} 
+
+.icon .site-mail {
+  font-size: 14px;
+  margin-left: 10px;
+  padding-right: 20px;
+  color: #808080;
+  text-decoration: none;
 }
 
-.container .english{
+
+.english{
+  margin-right: 355px;
   display: flex;
-  margin-left: auto;
   line-height: 40px;
   align-items: center;
 }
 
 .english a {
-  width: 140px;
+  width: 160px;
   box-sizing: border-box;
   height: 40px;
   background-color: #db3b3f;
@@ -129,7 +133,7 @@ body{
 }
 
 .english i{
-  transform: translateY(-20%);
+  transform: translateY(-10%);
 }
 .container .header-bottom{
   height: 80px;
@@ -219,19 +223,20 @@ body{
   margin-right: -130px !important;
   border: 2px solid #857d7c;
 }
-.search-container input::placeholder {
-  color: white;
+.input-2::placeholder {
+  text-indent: 10px;
+  color: #e8e7e6;
 }
 
 .search-container button {
   position: absolute;
   width: 130px;
-  height: 46px;
+  height: 42px;
   border-radius: 5px;
   background-color: #b83e3b;
   color: #fff;
   border: none;
-  right: 2px;
+  right: 4px;
 }
 
 .row {
@@ -239,24 +244,31 @@ body{
   text-align: center;
   --bs-gutter-x: 1rem;
   width: 1170px;
+  padding-top: 15px;
 }
 
 .site-table h2{
   font-size: 32px;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 17px;
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
 
-.row p{
-  padding-top: 10px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.7)
-}
 .row .col-sm-6{
   position: relative;
+}
+
+.job-title{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.job-title a{
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 .row .overlay {
   position: absolute;
@@ -308,6 +320,11 @@ body{
 
 .site-footer p{
   padding-top: 25px;
+  color: #808080;
+}
+
+.site-footer a{
+  text-decoration: none;
   color: #808080;
 }
 
